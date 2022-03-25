@@ -6,6 +6,8 @@ import styled from "styled-components";
 const StyleApp = styled.div`
     display: flex;
     justify-content: center;
+    background-color: #000;
+    color: white;
 `
 
 export default function Main(){

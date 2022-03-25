@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledPhoto = styled.div`
-    background-color: black;
+    background-color: #848484;
     color: white;
     display: flex;
     justify-content: center;
