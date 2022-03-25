@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import NasaPhoto from './NasaPhoto';
+import styled from "styled-components";
 
-
+const StyleApp = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
 export default function Main(){
     const [data, setData] = useState();
@@ -16,9 +20,9 @@ export default function Main(){
     }, [])
 
     return(
-        <div className='App'>
+        <StyleApp className='App'>
             {data && <NasaPhoto photo={data} />}
-        </div>
+        </StyleApp>
     )
     
 }
